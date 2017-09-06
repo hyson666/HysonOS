@@ -9,9 +9,9 @@ bximiage
 2.配置文件bochsrc.txt，使其能够正常挂载a.img软盘
 
 3.利用nasm编译boot.asm
-‘’‘
+```
 nasm boot.asm -o boot.bin
-’‘’
+```
 
 4.根据配置文件运行虚拟机
 ```
