@@ -1,5 +1,6 @@
 # Hello,OS!
 采用U盘以及小型虚拟机如同bochsrc运行本实例均可，这里利用后者，根据以下步骤配置：
+
 1.利用bochsrc自带工具创立一个虚拟软盘，终端命令如下
 ```
 bximiage
@@ -13,7 +14,12 @@ bximiage
 nasm boot.asm -o boot.bin
 ```
 
-4.根据配置文件运行虚拟机
+4.将boot.bin写入虚拟软盘：
+```
+sudo dd if=boot.bin of=a.img
+```
+
+5.根据配置文件运行虚拟机
 ```
 bochs -f bochsrc.txt
 ```
